@@ -1,10 +1,10 @@
+import os
 from flask import Flask, render_template, request
 from chatterbot import ChatBot
 
 app = Flask(__name__)
 
-bot = ChatBot("Dan", 
-database_uri='sqlite:///db.sqlite3')
+bot = ChatBot("Dan")
 
 @app.route("/")
 def home():
